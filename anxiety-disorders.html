@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Here4u</span></a></h1> 
+	  <h1 class="logoname"></h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./what-is-mental-health.html">What is Mental Health</a></li>
+              <li><a href="./mental-health-for-indigenous-people.html">Mental Health in Indigenous People</a></li>
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./ptsd.html">What is PTSD</a></li>
+          <li><a href="./ptsd.html">Panic Attacks</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+        <li><a href="https://7uv14voapf8.typeform.com/to/tM0PPXz5">Depression and Anxiety Self-Test</a></li>
+        <li><a href="https://7uv14voapf8.typeform.com/to/iXcU2Bkc">PTSD Self-Test</a></li>
+        </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="./registration.html">registration</a></li>
+	  </ul>
+	    <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">What to Look for</a></li>
+      <li><a href="./anxiety-disorders.html">Anxiety Disorders</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sidebar one_quarter first"> 
+      <!-- ################################################################################################ -->
+      <h6>What to Look for</h6>
+      <nav class="sdb_holder">
+       
+        <ul>
+		  <li style="background-color: powderblue;padding: 20px;"><a href="./anxiety-disorders.html">Anxiety Disorders</a></li>
+          <li style="background-color: #c2c2d6;padding: 20px;"><a href="./anxiety-disorders.html">Depression</a></li>
+		  <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">What is PTSD?</a></li>
+		  <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">Panic Attacks</a></li>
+          <!--<li><a href="pages/full-width.html">Full Width</a></li> -->
+          <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li> -->
+          <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li> -->
+          <!--<li><a href="pages/basic-grid.html">Basic Grid</a></li> -->
+          <!--<li><a href="pages/font-icons.html">Font Icons</a></li> -->
+        </ul>
+      
+      </nav>
+     
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content two_quarter" style = "text-align: justify;text-justify: inter-word;"> 
+      <!-- ################################################################################################ -->
+
+      <h2 style = "font-size: 30px; color: #006600">Anxiety Disorders</h2>
+
+<p>
+Occasional anxiety is an expected part of life. You might feel anxious when faced with a problem at work, before taking a test, or before making an important decision. But anxiety disorders involve more than temporary worry or fear. For a person with an anxiety disorder, the anxiety does not go away and can get worse over time. The symptoms can interfere with daily activities such as job performance, school work, and relationships.
+
+There are several types of anxiety disorders, including generalized anxiety disorder, panic disorder, and various phobia-related disorders and also includes several different types of anxiety disorders, including generalized anxiety disorder (GAD), panic disorder, social anxiety disorder, specific phobias, and obsessive-compulsive disorder (OCD). Each type of anxiety disorder has its own unique set of symptoms and diagnostic criteria.
+ 
+</p>
+      <h2 style = "font-size: 30px; color: #006600">Anxiety Disorders Among GEN_Z </h2>
+      <p> Anxiety disorders are commonly found in the general population and are likely prevalent in most of the communities. Children may be exposed to multiple risk factors including poor living conditions, poverty, parents with depression and anxiety, and high levels of parental stress. Relocation to urban centers may create separation from important social networks, reducing the chance for support.
+</p>
+      <p>The symptoms of anxiety disorder can vary from person to person, but common symptoms include restlessness, irritability, muscle tension, difficulty sleeping, and difficulty concentrating. Individuals with anxiety disorders may also experience physical symptoms such as sweating, trembling, rapid heartbeat, and difficulty breathing.
+
+        Treatment for anxiety disorder typically involves a combination of psychotherapy and medication. Cognitive-behavioral therapy (CBT) is a common form of psychotherapy used to treat anxiety disorders. This type of therapy helps individuals learn how to identify and change negative thought patterns and behaviors that contribute to their anxiety. Medications, such as selective serotonin reuptake inhibitors (SSRIs) or benzodiazepines, can also be helpful in reducing anxiety symptoms.
+        
+</p>
+
+
+	  <p>If you are experiencing symptoms of anxiety disorder, it's important to seek help from a mental health professional. With the right treatment, many people with anxiety disorders are able to manage their symptoms and improve their quality of life.
+</p>
+      <h2 style = "font-size: 30px; color: #006600">Depression</h2>
+	  <p>Depression is a common and serious mood disorder that affects how you feel, think, and act. It can cause persistent feelings of sadness, hopelessness, guilt, and worthlessness, and interfere with your daily functioning and quality of life. Depression can also lead to physical symptoms such as fatigue, pain, sleep problems, and appetite changes. Depression is not a sign of weakness or a character flaw. It is a medical condition that can be treated with medication, psychotherapy, or a combination of both.
+
+      Some of the possible causes of depression include:
+</p>
+<ul>
+  <li>Genetic factors: Depression can run in families and may be influenced by certain genes that affect brain chemistry and mood regulation.</li>
+  <li>Hormonal factors: Changes in hormone levels due to pregnancy, childbirth, menopause, thyroid problems, or other conditions can trigger or worsen depression.</li>
+  <li>Environmental factors: Stressful life events such as trauma, loss, abuse, violence, or conflict can increase the risk of developing depression. Chronic stress, isolation, lack of social support, or exposure to negative environments can also contribute to depression.</li>
+  <li>Biological factors: Depression may be associated with changes in the structure or function of certain brain regions that regulate mood, cognition, and emotion. Inflammation, immune system dysfunction, or neurotransmitter imbalances may also play a role in depression.</li>
+</ul>
+<p>Depression can be treated with various methods depending on the severity of symptoms, the underlying causes, and the preferences of the individual. Some of the common treatment options include:</p>
+<ul>
+  <li>Medication: Antidepressants are drugs that work by altering the levels or activity of certain brain chemicals that affect mood. They can help reduce symptoms of depression and improve functioning. However, they may also cause side effects or interact with other medications. Therefore, they should be taken under the guidance of a doctor who can monitor their effectiveness and adjust the dosage as needed.</li>
+  <li>Psychotherapy: Psychotherapy is a form of talk therapy that involves working with a mental health professional to explore and change negative thoughts, feelings, and behaviors that contribute to depression. Psychotherapy can help you cope with stress, improve your self-esteem, enhance your relationships, and develop new skills and strategies to overcome challenges. There are different types of psychotherapy such as cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), or psychodynamic therapy.</li>
+  <li>Lifestyle changes: Making some changes in your daily habits and routines can also help you manage depression and prevent relapse. Some of the beneficial lifestyle changes include:
+    <ol>
+      <li>Exercise: Physical activity can boost your mood, energy, and self-confidence by releasing endorphins and other natural chemicals in your brain. It can also reduce stress, improve sleep quality, and prevent or treat some physical health problems that may worsen depression.</li>
+      <li>Diet: Eating a balanced and nutritious diet can provide your body and brain with the essential vitamins, minerals, antioxidants, and omega-3 fatty acids that support your mental health. Avoiding or limiting alcohol, caffeine, nicotine, and processed foods can also help you regulate your mood and avoid mood swings.</li>
+      <li>Sleep: Getting enough sleep is crucial for your mental and physical well-being. Lack of sleep can impair your mood, concentration, memory, and immune system. Try to establish a regular sleep schedule by going to bed and waking up at the same time every day. Avoid using electronic devices before bed as they can disrupt your sleep cycle. Create a comfortable and relaxing sleeping environment by keeping your room dark, quiet, and cool.</li>
+      <li>Social support: Having supportive people in your life who care about you and understand you can make a big difference in your recovery from depression. Reach out to your family members,</li>
+    </ol>
+    </li>
+</ul> 
+<ul>
+
+	  <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> -->
+    <!-- ################################################################################################ -->
+    <!--<div class="sectiontitle">
+      <h6 class="heading">interdum pulvinar aliquam</h6>
+      <p>in urna proin luctus ligula eget mauris quisque congue malesuada</p>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear"><i class="fas fa-phone"></i> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-envelope"></i> <span><strong>Send us a mail:</strong> support@domain.com</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-map-marker-alt"></i> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span> </div>
+      </li>
+    </ul>-->
+    <!-- ################################################################################################ -->
+  <!--</section>
+</div>-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#ccffff;">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname">Our Misssion</h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">
+        Here4u  is to provide accessible and reliable resources for individuals seeking support for their mental health. The website aims to destigmatize mental health issues and promote awareness of the importance of seeking help when needed. It provides a range of resources, including articles, blogs, forums, and access to mental health professionals, to support individuals in managing their mental health and well-being. Additionally, the website may provide referrals to local mental health services or resources for those who require more intensive support. </p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/profile.php?id=100092042471829&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/here4u-choose-help-not-suffering-154810273"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></li>
+        <li><a href="https://www.samhsa.gov/">Substance Abuse and Mental Health Services Administration (SAMHSA) </a></li>
+        <li><a href="https://www.nami.org/">National Alliance on Mental Illness (NAMI)</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+        <li><a href="https://www.mentalhealth.gov/">http://MentalHealth.gov</a></li>
+       </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2023 by Arushi,Medha &Lakshita - All Rights Reserved </p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

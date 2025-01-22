@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Here4u</span></a></h1> 
+	  <h1 class="logoname"></h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./what-is-mental-health.html">What is Mental Health</a></li>
+              <li><a href="./mental-health-for-indigenous-people.html">Mental Health of People nowadays</a></li>
+         
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./ptsd.html">What is PTSD</a></li>
+          <li><a href="./ptsd.html">Panic Attacks</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+        <li><a href="https://7uv14voapf8.typeform.com/to/tM0PPXz5">Depression and Anxiety Self-Test</a></li>
+        <li><a href="https://7uv14voapf8.typeform.com/to/iXcU2Bkc">PTSD Self-Test</a></li>
+        </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="./registration.html">registration</a></li>
+	  </ul>
+	    <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">What to Look for</a></li>
+      <li><a href="./ptsd.html">PTSD</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sidebar one_quarter first"> 
+      <!-- ################################################################################################ -->
+      <h6>Mental Health Basics</h6>
+      <nav class="sdb_holder">
+       
+        <ul>
+		  <li style="background-color: powderblue;padding: 20px;"><a href="./anxiety-disorders.html">Anxiety Disorders</a></li>
+          <li style="background-color: #c2c2d6;padding: 20px;"><a href="./anxiety-disorders.html">Depression</a></li>
+		  <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">What is PTSD?</a></li>
+		  <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">Panic Attacks</a></li>
+          <!--<li><a href="pages/full-width.html">Full Width</a></li> -->
+          <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li> -->
+          <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li> -->
+          <!--<li><a href="pages/basic-grid.html">Basic Grid</a></li> -->
+          <!--<li><a href="pages/font-icons.html">Font Icons</a></li> -->
+        </ul>
+      
+      </nav>
+     
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content two_quarter" style = "text-align: justify;text-justify: inter-word;"> 
+      <!-- ################################################################################################ -->
+
+      <h2 style = "font-size: 30px; color: #006600">What is PTSD</h2>
+
+<p>
+  Post-traumatic stress disorder (PTSD) is a mental and behavioral disorder[7] that can develop because of exposure to a traumatic event, such as sexual assault, warfare, traffic collisions, child abuse, domestic violence, or other threats on a person's life.Symptoms may include disturbing thoughts, feelings, or dreams related to the events, mental or physical distress to trauma-related cues, attempts to avoid trauma-related cues, alterations in the way a person thinks and feels, and an increase in the fight-or-flight response. These symptoms last for more than a month after the event. Young children are less likely to show distress but instead may express their memories through play. A person with PTSD is at a higher risk of suicide and intentional self-harm.[2][9]
+
+</p>
+      <h2 style = "font-size: 30px; color: #006600">PTSD Among People</h2>
+      <p> Most people who experience traumatic events do not develop PTSD. People who experience interpersonal violence such as rape, other sexual assaults, being kidnapped, stalking, physical abuse by an intimate partner, and incest or other forms of childhood sexual abuse are more likely to develop PTSD than those who experience non-assault based trauma, such as accidents and natural disasters. Those who experience prolonged trauma, such as slavery, concentration camps, or chronic domestic abuse, may develop complex post-traumatic stress disorder (C-PTSD). C-PTSD is similar to PTSD but has a distinct effect on a person's emotional regulation and core identity.
+</p>
+
+ <h2 style = "font-size: 30px; color: #006600">Panic Attacks</h2>
+
+      <p>
+        Panic attacks are sudden episodes of intense fear that trigger severe physical reactions when there is no real danger or apparent cause. Panic attacks can make you feel like you are losing control, having a heart attack or even dying. Panic attacks can be caused by various factors, such as genetics, major stress, or a temperament that is more sensitive to stress or negative emotions. Some people who have recurrent, unexpected panic attacks may develop panic disorder, a type of anxiety disorder.
+
+        Panic attacks and panic disorder can be treated with therapy and medications. Therapy can help you learn how to cope with your fear, reduce your anxiety, and prevent panic attacks. Cognitive behavioral therapy (CBT) is a type of therapy that teaches you how to identify and change negative thoughts and behaviors that trigger or worsen your panic attacks. Medications such as antidepressants and anti-anxiety drugs can help reduce the frequency and severity of your panic attacks. However, medications may have side effects and should be used under the guidance of your doctor.
+</p>
+
+      <ul>
+
+	  <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> -->
+    <!-- ################################################################################################ -->
+    <!--<div class="sectiontitle">
+      <h6 class="heading">interdum pulvinar aliquam</h6>
+      <p>in urna proin luctus ligula eget mauris quisque congue malesuada</p>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear"><i class="fas fa-phone"></i> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-envelope"></i> <span><strong>Send us a mail:</strong> support@domain.com</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-map-marker-alt"></i> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span> </div>
+      </li>
+    </ul>-->
+    <!-- ################################################################################################ -->
+  <!--</section>
+</div>-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#ccffff;">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname">Our Misssion</h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">Here4u  is to provide accessible and reliable resources for individuals seeking support for their mental health. The website aims to destigmatize mental health issues and promote awareness of the importance of seeking help when needed. It provides a range of resources, including articles, blogs, forums, and access to mental health professionals, to support individuals in managing their mental health and well-being. Additionally, the website may provide referrals to local mental health services or resources for those who require more intensive support. </p>
+      <ul class="faico clear">
+        
+        <li><a class="faicon-facebook" href="https://www.facebook.com/profile.php?id=100092042471829&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/here4u-choose-help-not-suffering-154810273"><i class="fab fa-linkedin"></i></a></li>
+     
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></li>
+        <li><a href="https://www.samhsa.gov/">Substance Abuse and Mental Health Services Administration (SAMHSA) </a></li>
+        <li><a href="https://www.nami.org/">National Alliance on Mental Illness (NAMI)</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+        <li><a href="https://www.mentalhealth.gov/">http://MentalHealth.gov</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2023 - All Rights Reserved by Arushi, Medha & Lakshita</p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

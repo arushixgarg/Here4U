@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+<header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Here4U</span></a></h1> 
+	  <h1 class="logoname"></h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./what-is-mental-health.html">Here4U</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./ptsd.html">What is PTSD</a></li>
+          <li><a href="./ptsd.html">Panic Attacks</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+        <li><a href="https://7uv14voapf8.typeform.com/to/tM0PPXz5">Depression and Anxiety Self-Test</a></li>
+        <li><a href="https://7uv14voapf8.typeform.com/to/iXcU2Bkc">PTSD Self-Test</a></li>
+        </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="./registration.html">registration</a></li>
+	  </ul>
+	  
+      </li>
+      <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading" style = "font-size: 30px;">Stories of Courage</h6>
+
+    </div>
+    <ul class="nospace group overview">
+      <li class="one_third">
+        <figure><a href="https://medium.com/@wilw/my-name-is-wil-wheaton-i-live-with-chronic-depression-and-generalized-anxiety-i-am-not-ashamed-8f693f9c0af1"><img src="../images/demo/st5.jpg" alt="" width="500" height="400"></a>
+        </figure>
+      </li>
+      </li>
+      <li class="one_third">
+        <figure><a href="https://medium.com/s/greatescape/what-its-like-to-have-an-adhd-brain-52a7c5171d8f"><img src="../images/demo/st2.jpg" alt="" width="500" height="400"></a>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="https://medium.com/@davidlykhim/a-reflection-on-how-i-dug-myself-out-of-the-millennial-mental-health-decline-831ae56e721c"><img src="../images/demo/st3.jpg" alt="" width="500" height="400"></a>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="https://medium.com/@taylorotwell/my-mental-health-toolbelt-9b9fdd4ae149"><img src="../images/demo/st4.jpg" alt="" width="500" height="400"></a>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="https://medium.com/publishous/bipolar-confessions-4be3eb0243e4"><img src="../images/demo/st1.jpg" alt="" width="500" height="600"></a>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="https://www.blackdoginstitute.org.au/resources-support/personal-stories/elliot/"><img src="../images/demo/stor6.jpg" alt=""></a>
+        </figure>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+	
+  <div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Tell us your Story</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Wanna Share?</h4>
+        </div>
+        <div class="modal-body">
+          <p>CLick on the "Choose File" button to upload a file:</p>
+		  
+		  <footer><a class="btn" href="#">Choose File</a></footer>
+		
+		  <button style="margin-left:27px; margin-top:10px; background-color:#ffff66">Upload</button> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>	
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Big homes, bigger bank accounts, fancy cars, and oodles of fans -- it seems celebrities have it all. But celebrity doesn’t protect from mental health problems. Many of today’s biggest stars are sharing candid information about their battles with mental illness. Their stories and their courage to talk frankly about their conditions build healthy awareness of current treatments and the importance of loving support.Personal stories are written by influencial people on their overcoming of mental health issues. These Stories are here to help you in your journey</h6>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear" ><span><strong><p style = "font-size:17px;">Donny Osmond-social anxiety disorder</p></strong> <p style = "font-size:17px;">
+          Another local celebrity who suffers from social anxiety disorder, Donny Osmond has been battling social anxiety while performing since he was a child. It was in 1994 while performing in the lead role in Andrew Lloyd Webber’s Joseph and the Amazing Technicolor Dreamcoat that he realized he needed help. Since 2004, Osmond has been an honorary member of the Anxiety and Depression Association of America. “I want to let people know that they are not alone and that help is available,” he said.
+          </p></span>
+<div class="container" style = "left:-145px" >
+  <!-- Trigger the modal with a button -->
+  
+  
+  
+</div>		
+</div>
+      </li>
+      <li class="one_third">
+        <div class="block clear" style = "font-size:20px;"><span><strong><p style = "font-size:17px;">Michael Phelps-ADHD</p></strong> <p style = "font-size:17px;">
+          He is an American swimmer, who has won a record-breaking 19 Olympic medals during his swimming career. He also lives with attention-deficit-hyperactivity-disorder. “For Phelps, a gangly, hyperactive child who was diagnosed with the condition aged nine, the swimming pool was a sanctuary, a place to burn off excess energy,” writer Patrick Barkham says. “The concept of role models can seem an overused cliche but the Olympians with ADHD may really inspire a generation of athletes who once would have been written off.”
+          </p>
+		</span> 
+		<div class="container" style = "left:-145px" >
+  
+
+  <!-- Modal -->
+  
+</div>	
+		</div>
+      </li>
+	  
+      <li class="one_third">
+        <div class="block clear" style = "font-size:20px;"><span><strong><p style = "font-size:17px;">Leonardo DiCaprio-obsessive-compulsive disorder</p></strong> <p style = "font-size:17px;">The Oscar-winning star admitted he feels compelled to walk through doorways numerous times and step on sidewalk stains left by used chewing gum. But DiCaprio has managed to keep his OCD tendencies under control, saying, “I’m able to say at some point, ‘OK, you’re being ridiculous. Stop stepping on every gum stain you see. You don’t need to do that.’”
+          
+          </p></span>
+		<div class="container" style = "left:-145px" >
+  <!-- Trigger the modal with a button -->
+  
+  
+</div>	</div>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+  
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#ccffff;">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname">Our Misssion</h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">Here4u  is to provide accessible and reliable resources for individuals seeking support for their mental health. The website aims to destigmatize mental health issues and promote awareness of the importance of seeking help when needed. It provides a range of resources, including articles, blogs, forums, and access to mental health professionals, to support individuals in managing their mental health and well-being. Additionally, the website may provide referrals to local mental health services or resources for those who require more intensive support.</p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/profile.php?id=100092042471829&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/here4u-choose-help-not-suffering-154810273"><i class="fab fa-linkedin"></i></a></li>
+     </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading" style = "font-size:25px;">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.nimh.nih.gov/">National Institute of Mental Health (NIMH)</a></li>
+        <li><a href="https://www.samhsa.gov/">Substance Abuse and Mental Health Services Administration (SAMHSA) </a></li>
+        <li><a href="https://www.nami.org/">National Alliance on Mental Illness (NAMI)</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+        <li><a href="https://www.mentalhealth.gov/">http://MentalHealth.gov</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading" style = "font-size:25px;">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2023 Arushi,Medha& LakshitaS - All Rights Reserved </p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

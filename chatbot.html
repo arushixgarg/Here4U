@@ -1,0 +1,33 @@
+ <html>
+<head>
+	<title>Chatbot Interface</title>
+</head>
+<body>
+	<h1>Welcome to my Chatbot!</h1>
+
+	<p>Ask me a question:</p>
+	<input type="text" id="input">
+	<button onclick="getResponse()">Submit</button>
+
+	<p id="output"></p>
+
+	<script>
+		function getResponse() {
+			// Get input from user
+			var input = document.getElementById("input").value;
+
+			// Send input to chatbot API and get response
+			// Replace URL and API key with your own
+			fetch("https://api.chatbot.com/?input=" + input + "&key=123456")
+				.then(response => response.json())
+				.then(data => {
+					// Update output with chatbot response
+					document.getElementById("output").innerHTML = data.response;
+				})
+				.catch(error => {
+					console.error("Error:", error);
+				});
+		}
+	</script>
+</body>
+</html>
